@@ -1,0 +1,30 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Information App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Country Information App</h1>
+    </header>
+    <div class="container">
+        <input title="Search" id="Search" type="text" placeholder="Search...">
+        <select title="searchBy" id="searchBy">
+            <option value="region">Region</option>
+            <option value="subregion">Subregion</option>
+            <option value="capital">Capital</option>
+            <option value="translation">Translation</option>
+        </select>
+        <button type="button" onclick="fetchAPI()">Fetch</button>
+        <div id="list"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

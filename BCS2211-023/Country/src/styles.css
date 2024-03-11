@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #4e54c8, #8f94fb);
+  color: white;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #2d3436;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+input, select, button {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  border: 2px solid #2980b9;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#list {
+  padding: 0 20px;
+}
+
+.country-info {
+  background-color: rgba(63, 81, 181, 0.7); /* Slightly darker color than the background */
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.country-info:hover {
+  background-color: rgba(63, 81, 181, 0.9); /* Darker color on hover */
+}
+
+#countryDetails {
+  /* Add border or box styles for details content */
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#countryDetails a {
+  /* Style maps links as buttons */
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#countryDetails a:hover {
+  background-color: #2980b9;
+}
+
+/* Add these styles for the custom image */
+#custom-image-container {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#custom-image {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for responsiveness */
+@media only screen and (max-width: 600px) {
+  #search-container {
+    flex-direction: column;
+  }
+
+  #Search,
+  #searchBy,
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
